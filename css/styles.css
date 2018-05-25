@@ -1,0 +1,402 @@
+body, * {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+}
+nav {
+    background-color: #4d4d4f;
+    height: 40px;
+}
+img#hive-logo {
+    z-index: 5;
+    position: relative;
+    height: 315px;
+    margin-left: 5%;
+    margin-top: -41px;
+}
+#hero {
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+}
+#hero::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: -20px;
+    right: 0;
+    width: 150%;
+    height: 150px;
+    background-color: #ffffff;
+    -ms-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    z-index: 4;
+}
+#hero::after {
+    content: '';
+    position: absolute;
+    bottom: -102px;
+    left: -20px;
+    right: 0;
+    width: 150%;
+    height: 250px;
+    background-color: #ffffff;
+    -ms-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+header img#hive-hero {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    object-fit: cover;
+}
+header #header-content {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    color: #fff;
+    z-index: 2;
+}
+header #header-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 25%;
+    background-color: #0e6383;
+}
+#hero-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+h1 {
+    -ms-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    position: relative;
+    top: 310px;
+}
+span.title-one {
+    display: block;
+    font-family: "museo-sans", sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+span.title-two {
+    display: block;
+    font-family: "blenny",sans-serif;
+    font-size: 50px;
+    text-align: right;
+    margin-top: -20px;
+}
+span.title-three {
+    font-family: "franklin-gothic-urw",sans-serif;
+    display: block;
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 121px;
+    margin-top: -59px;
+    letter-spacing: -10px;
+    margin-right: 7px;
+}
+hr {
+    width: 1000%;
+    border: 6px solid #fff;
+    margin-top: -35px;
+    margin-left: -50%;
+    background-color: #fff;
+}
+span.title-four {
+    display: block;
+    font-family: "franklin-gothic-urw",sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    letter-spacing: -6px;
+    text-align: right;
+    margin-right: 20px;
+    margin-top: -20px;
+}
+#header-content p {
+    position: absolute;
+    bottom: 15px;
+    text-align: right;
+    left: 0;
+    right: 0;
+    font-family: 'blenny';
+    font-size: 22px;
+}
+#landing-content .container {
+    padding-top: 75px;
+    padding-bottom: 100px;
+}
+#landing-content .section-title h2 {
+    text-align: center;
+    font-family: "franklin-gothic-urw",sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    color: #231f20;
+    border-left: 10px solid #0e6383;
+    border-right: 10px solid #0e6383;
+    max-width: 624px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    margin-bottom: 40px;
+}
+.flex-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section#landing-content .col {
+    width: 50%;
+    padding: 0px 15px;
+}
+section#landing-content .col.left-col {
+    text-align: right;
+    line-height: 1.4;
+    font-family: "franklin-gothic-urw",sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #0e6383;
+}
+.col.right-col {
+    text-align: center;
+}
+.button-wrapper a {
+    background-color: #000000;
+    padding: 15px 25px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "franklin-gothic-urw",sans-serif;
+    font-size: 20px;
+    margin: 0 auto;
+    z-index: 10;
+    position: relative;
+    transition: all .2s ease-out;
+}
+.button-wrapper a:hover {
+    background-color: #ff9900;
+}
+.date-wrapper {
+    padding-top: 20px;
+}
+h2 span.date-one {
+    font-size: 130px;
+    line-height: .9;
+}
+span.date-two {
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    line-height: 0.8;
+}
+.date-wrapper h2 {
+    font-family: 'blenny';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0e6383;
+}
+section#landing-columns .col {
+    min-height: 400px;
+    width: 100%;
+}
+section#landing-columns .left-col {
+    background-image: url('../img/beverages-brunch-cocktail-5317.jpg');
+    background-size: cover;
+    background-position: center;
+}
+section#landing-columns .right-col {
+    background-image: url('../img/artist-band-bass-92080.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#landing-columns .col {
+    display: flex;
+    align-items: center;
+}
+#landing-columns h3 {
+    color: #ffffff;
+    font-family: "franklin-gothic-urw",sans-serif;
+    font-size: 35px;
+    margin: 15px 20px;
+    text-align: left;
+    line-height: .9;
+    position: absolute;
+}
+#landing-columns h3 span {
+    font-size: 100px;
+}
+footer {
+    background-color: #4d4d4f;
+    padding-bottom: 50px;
+}
+footer .sponsor-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .sponsor-logos img {
+    max-width: 142px;
+    opacity: .4;
+    margin: 0 15px;
+}
+footer .sponsor-title {
+    width: 320px;
+    background-color: #717172;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    font-family: 'blenny';
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.medium-visible {
+    display: none;
+}
+.small-visible {
+    display: none;
+}
+.xsmall-visible {
+    display: none;
+}
+
+@media (min-width: 1700px) {
+    h1 {
+      top: 330px;
+    }
+    #hero::before {
+      top: -130px;
+      height: 170px;
+    }
+    .large-visible {
+        display: block;
+    }
+    .medium-visible {
+        display: none;
+    }
+    .small-visible {
+        display: none;
+    }
+    .xsmall-visible {
+        display: none;
+    }
+}
+@media (max-width: 1100px) {
+  .container {
+      width: 768px;
+  }
+  .large-visible {
+      display: none;
+  }
+  .medium-visible {
+      display: block;
+  }
+  .small-visible {
+      display: none;
+  }
+  .xsmall-visible {
+      display: none;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+      width: 100%;
+      padding: 0 15px
+  }
+  .flex-row {
+      flex-direction: column;
+  }
+  section#landing-content .col {
+      width: 100%;
+      padding: 40px 15px;
+  }
+  section#landing-content .col.left-col {
+      text-align: center;
+  }
+  #landing-content .section-title h2 {
+    margin-bottom: 0px;
+  }
+  .medium-visible {
+      display: none;
+  }
+  .small-visible {
+      display: block;
+  }
+  .xsmall-visible {
+      display: none;
+  }
+  header #header-content::before {
+    background-color: transparent;
+  }
+  nav .container {
+    text-align: center;
+  }
+  footer .sponsor-logos {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  #hero {
+    height: 510px;
+  }
+  img#hive-logo {
+    height: 200px;
+    margin-left: 0px;
+    margin-top: -26px;
+  }
+  footer .sponsor-logos {
+    flex-direction: column;
+  }
+  footer .container {
+    padding: 0px;
+  }
+  .small-visible {
+    display: none;
+  }
+  .xsmall-visible {
+    display: block;
+  }
+  span.title-one {
+    font-size: 12px;
+  }
+  span.title-two {
+    font-size: 36px;
+  }
+  span.title-three {
+    font-size: 75px;
+    margin-top: -39px;
+    letter-spacing: -5px;
+  }
+  hr {
+    margin-top: -20px;
+  }
+  #header-content p {
+    font-size: 15px;
+    text-align: center;
+    bottom: 5px;
+  }
+}
